@@ -1,0 +1,47 @@
+{
+  "name": "mtk-pure-web-project-sample",
+  "version": "1.0.0",
+  "description": "mtk-pure-web-project-sample",
+  "main": "index.js",
+  "dependencies": {
+    "autoprefixer": "^9.8.0",
+    "intersection-observer": "^0.10.0",
+    "jquery": "^3.7.1",
+    "postcss": "^7.0.32",
+    "postcss-cli": "^7.1.1",
+    "postcss-loader": "^3.0.0",
+    "precss": "^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^6.0.2",
+    "css-loader": "^3.6.0",
+    "cssnano": "^4.1.10",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.3.0",
+    "html-webpack-tags-plugin": "^2.0.17",
+    "mini-css-extract-plugin": "^0.9.0",
+    "style-loader": "^1.2.1",
+    "terser-webpack-plugin": "^3.0.5",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "url-loader": "^4.1.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prod": "webpack --config webpack.prod.js --mode production",
+    "dev": "webpack --config webpack.dev.js --mode development --watch",
+    "postcss": "postcss src/index.css -o src/style.css -m"
+  },
+  "browserslist": [
+    ">1%",
+    "last 2 versions",
+    "ie >= 8"
+  ],
+  "author": "",
+  "license": "ISC"
+}
